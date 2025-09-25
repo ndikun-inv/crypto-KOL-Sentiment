@@ -3,9 +3,8 @@ import datetime
 import pytz
 
 # ============= CONFIG =============
-# Coingecko API untuk Top 100 coins
 COINGECKO_URL = "https://api.coingecko.com/api/v3/coins/markets"
-# Contoh sumber KOL (dummy untuk demo, bisa ganti API/news valid nanti)
+
 KOL_SOURCES = [
     {
         "source": "The Defiant",
@@ -21,7 +20,7 @@ KOL_SOURCES = [
         "link": "https://glassnode.com/insight/article2",
         "coins": ["BTC"],
         "sentiment": "Negative",
-        "time": datetime.datetime.utcnow() - datetime.timedelta(hours=2),
+        "time": datetime.datetime.utcnow() - datetime.timedelta(hours=5),  # expired (>4 jam)
     },
     {
         "source": "The Defiant",
@@ -29,11 +28,10 @@ KOL_SOURCES = [
         "link": "https://thedefiant.io/article3",
         "coins": ["ETH"],
         "sentiment": "Positive",
-        "time": datetime.datetime.utcnow() - datetime.timedelta(hours=3),
+        "time": datetime.datetime.utcnow() - datetime.timedelta(hours=2),
     },
 ]
 
-# WIB timezone
 WIB = pytz.timezone("Asia/Jakarta")
 
 
@@ -60,26 +58,26 @@ def format_time_wib(dt):
 
 
 def main():
-    # Fetch dynamic trending coins
     coins = fetch_top_coins(100)
+    cutoff = datetime.datetime.utcnow() - datetime.timedelta(hours=4)
 
     with open("KOL_TRENDING.md", "w", encoding="utf-8") as f:
-        # Header
-        f.write("# 📊 KOL Narratives & Trending Coins (24h)\n\n")
+        f.write("# 📊 KOL Narratives & Trending Coins (4h)\n\n")
 
-        # KOL Narratives
-        f.write("## 🔎 KOL Narratives (24h)\n\n")
+        # Filter KOL narratives hanya ≤ 4 jam terakhir
+        f.write("## 🔎 KOL Narratives (≤4h)\n\n")
         f.write("| Time (WIB) | Source | Coins | Sentiment | Title |\n")
         f.write("|------------|--------|-------|-----------|-------|\n")
 
         for item in KOL_SOURCES:
-            f.write(
-                f"| {format_time_wib(item['time'])} "
-                f"| {item['source']} "
-                f"| {','.join(item['coins'])} "
-                f"| {item['sentiment']} "
-                f"| [{item['title']}]({item['link']}) |\n"
-            )
+            if item["time"] >= cutoff:  # hanya yg masih fresh
+                f.write(
+                    f"| {format_time_wib(item['time'])} "
+                    f"| {item['source']} "
+                    f"| {','.join(item['coins'])} "
+                    f"| {item['sentiment']} "
+                    f"| [{item['title']}]({item['link']}) |\n"
+                )
 
         # Dynamic Trending Coins
         f.write("\n\n## 🚀 Dynamic Trending Coins (Top 100)\n\n")
