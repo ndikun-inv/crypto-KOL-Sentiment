@@ -1,0 +1,35 @@
+name: KOL Narratives
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 * * * *"  # tiap jam, menit 15 (WIB = UTC+7)
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run collector
+        run: python kol_narratives.py
+
+      - name: Commit outputs
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/*.csv data/*.xlsx KOL_TRENDING.md || true
+          git commit -m "Update KOL narratives" || echo "No changes"
+          git push
