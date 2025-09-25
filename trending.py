@@ -3,7 +3,7 @@ import requests
 
 API_KEY = os.getenv("CRYPTOPANIC_API_KEY")
 
-url = f"https://cryptopanic.com/api/developer/v1/posts/?auth_token={API_KEY}&public=true"
+url = f"https://cryptopanic.com/api/v1/posts/?auth_token={API_KEY}&public=true"
 
 try:
     response = requests.get(url, timeout=15)
@@ -15,7 +15,7 @@ try:
         content = "| ❌ No data | Check API key or quota |\n"
     else:
         rows = ""
-        for post in posts[:5]:  # ambil 5 berita terbaru aja biar aman quota
+        for post in posts[:5]:  # ambil 5 berita terbaru aja
             title = post.get("title", "No title")
             source = post.get("source", {}).get("title", "Unknown")
             rows += f"| {title} | {source} |\n"
@@ -27,5 +27,4 @@ except Exception as e:
 with open("TRENDING.md", "w", encoding="utf-8") as f:
     f.write("# 📰 Crypto News (CryptoPanic)\n\n")
     f.write("| Title | Source |\n")
-    f.write("|-------|--------|\n")
-    f.write(content)
+    f.write("|-------|--------|\n
