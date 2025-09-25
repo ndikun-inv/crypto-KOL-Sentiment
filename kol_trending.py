@@ -25,11 +25,7 @@ def fetch_kol(limit=10):
     if not CRYPTOPANIC_API_KEY:
         return []
 
-    params = {
-        "auth_token": CRYPTOPANIC_API_KEY,
-        "filter": "news",
-        "public": "true"
-    }
+    params = {"auth_token": CRYPTOPANIC_API_KEY, "filter": "news", "public": "true"}
     try:
         r = requests.get(CRYPTOPANIC_URL, params=params, timeout=15)
         r.raise_for_status()
@@ -63,12 +59,7 @@ def fetch_kol(limit=10):
 
 # 🚀 Get Top 100 Coins (Dynamic)
 def fetch_trending(limit=100):
-    params = {
-        "vs_currency": "usd",
-        "order": "market_cap_desc",
-        "per_page": limit,
-        "page": 1
-    }
+    params = {"vs_currency": "usd", "order": "market_cap_desc", "per_page": limit, "page": 1}
     try:
         r = requests.get(COINGECKO_URL, params=params, timeout=20)
         r.raise_for_status()
@@ -82,17 +73,23 @@ def fetch_trending(limit=100):
             f"| {idx} | {coin['name']} | {coin['symbol'].upper()} | "
             f"{coin['market_cap']:,} | {coin['total_volume']:,} |"
         )
-    return rows
+
+    # Tambahin timestamp WIB biar jelas kapan update data trending
+    ts_wib = datetime.utcnow().replace(tzinfo=pytz.utc).astimezone(pytz.timezone("Asia/Jakarta"))
+    timestamp = ts_wib.strftime("%Y-%m-%d %H:%M:%S WIB")
+
+    return rows, timestamp
 
 # 📝 Write Markdown
-def write_md(kol_rows, coin_rows):
+def write_md(kol_rows, coin_rows, coin_timestamp):
     header = [
         "# 📊 KOL Narratives & Trending Coins (4h)\n",
         "## 🔍 KOL Narratives (≤4h)\n",
         "| Time (WIB) | Source | Coins | Sentiment | Title |",
         "|-----------|--------|-------|-----------|-------|",
     ] + kol_rows + [
-        "\n## 🚀 Dynamic Trending Coins (Top 100)\n",
+        f"\n## 🚀 Dynamic Trending Coins (Top 100)\n",
+        f"Last updated: **{coin_timestamp}**\n",
         "| Rank | Coin | Symbol | Market Cap (USD) | 24h Volume (USD) |",
         "|------|------|--------|------------------|------------------|",
     ] + coin_rows
@@ -103,8 +100,8 @@ def write_md(kol_rows, coin_rows):
 # 🚦 Main
 def main():
     kol_rows = fetch_kol(limit=20)
-    coin_rows = fetch_trending(limit=100)
-    write_md(kol_rows, coin_rows)
+    coin_rows, coin_timestamp = fetch_trending(limit=100)
+    write_md(kol_rows, coin_rows, coin_timestamp)
 
 if __name__ == "__main__":
     main()
