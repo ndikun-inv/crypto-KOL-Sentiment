@@ -1,35 +1,31 @@
-name: KOL Narratives
+name: Update KOL narratives & trending coins
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "15 * * * *"  # tiap jam, menit 15 (WIB = UTC+7)
-
-permissions:
-  contents: write
+    - cron: "0 * * * *"  # jalan tiap 1 jam
+  workflow_dispatch:
 
 jobs:
-  run:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v3
 
-      - uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
           python-version: "3.11"
 
       - name: Install deps
-        run: pip install -r requirements.txt
+        run: pip install requests pytz
 
-      - name: Run collector
+      - name: Run script
         run: python kol_narratives.py
 
-      - name: Commit outputs
+      - name: Commit & Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/*.csv data/*.xlsx KOL_TRENDING.md || true
-          git commit -m "Update KOL narratives" || echo "No changes"
+          git add KOL_TRENDING.md
+          git commit -m "Update KOL narratives & trending coins"
           git push
