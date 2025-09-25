@@ -2,4 +2,4 @@
 
 | Word | Score |
 |------|-------|
-| ❌ Error 400 | Check API key / query |
+| ❌ Error 400 | {"errors":{"details":"Invalid JSON Web Token (JWT)"}} |
