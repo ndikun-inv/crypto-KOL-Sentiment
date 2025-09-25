@@ -1,9 +1,9 @@
 name: Crypto News
 
 on:
-  workflow_dispatch: # bisa jalan manual
+  workflow_dispatch:
   schedule:
-    - cron: "0 */6 * * *" # tiap 6 jam sekali
+    - cron: "0 */6 * * *"   # jalan tiap 6 jam
 
 jobs:
   build:
@@ -15,9 +15,9 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install deps
         run: pip install requests
 
       - name: Run script
@@ -27,8 +27,8 @@ jobs:
 
       - name: Commit results
         run: |
-          git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           git add TRENDING.md
-          git commit -m "Update trending news"
+          git commit -m "Update trending news" || exit 0
           git push
