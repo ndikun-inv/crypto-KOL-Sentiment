@@ -1,98 +1,63 @@
+import os
 import requests
 import datetime
 import pytz
 
-# ============= CONFIG =============
-COINGECKO_URL = "https://api.coingecko.com/api/v3/coins/markets"
+# === Config ===
+API_KEY = os.getenv("CRYPTOPANIC_API_KEY")  # simpen di GitHub Secrets
+API_URL = "https://cryptopanic.com/api/v1/posts/"
 
-KOL_SOURCES = [
-    {
-        "source": "The Defiant",
-        "title": "Crypto Market Drops as Upbeat US Economic Data Dashes Rate Cut Hopes",
-        "link": "https://thedefiant.io/article1",
-        "coins": ["BTC", "ETH"],
-        "sentiment": "Neutral",
-        "time": datetime.datetime.utcnow(),
-    },
-    {
-        "source": "Glassnode Insights",
-        "title": "From Rally to Correction",
-        "link": "https://glassnode.com/insight/article2",
-        "coins": ["BTC"],
-        "sentiment": "Negative",
-        "time": datetime.datetime.utcnow() - datetime.timedelta(hours=5),  # expired (>4 jam)
-    },
-    {
-        "source": "The Defiant",
-        "title": "Joe Lubin’s SharpLink to Tokenize $BET Shares on Ethereum via Superstate",
-        "link": "https://thedefiant.io/article3",
-        "coins": ["ETH"],
-        "sentiment": "Positive",
-        "time": datetime.datetime.utcnow() - datetime.timedelta(hours=2),
-    },
-]
+# Timezone
+wib = pytz.timezone("Asia/Jakarta")
+now_utc = datetime.datetime.now(datetime.timezone.utc)
+cutoff = now_utc - datetime.timedelta(hours=4)  # ≤ 4 jam
 
-WIB = pytz.timezone("Asia/Jakarta")
+# === Fetch data from CryptoPanic ===
+params = {
+    "auth_token": API_KEY,
+    "public": "true",
+    "kind": "news"  # hanya berita, exclude price alerts
+}
 
+resp = requests.get(API_URL, params=params)
+data = resp.json()
 
-def fetch_top_coins(limit=100):
-    """Ambil top coin dari Coingecko"""
-    params = {
-        "vs_currency": "usd",
-        "order": "market_cap_desc",
-        "per_page": limit,
-        "page": 1,
-        "sparkline": False,
-    }
-    resp = requests.get(COINGECKO_URL, params=params, timeout=30)
-    if resp.status_code == 200:
-        return resp.json()
+narratives = []
+
+if "results" in data:
+    for item in data["results"]:
+        # Parse timestamp
+        published_at = datetime.datetime.fromisoformat(item["published_at"].replace("Z", "+00:00"))
+        if published_at >= cutoff:  # filter 4 jam terakhir
+            # Konversi ke WIB
+            time_wib = published_at.astimezone(wib).strftime("%Y-%m-%d %H:%M:%S")
+            title = item.get("title", "No title")
+            url = item.get("url", "")
+            source = item.get("source", {}).get("title", "Unknown")
+            coins = ",".join([c.get("code", "") for c in item.get("currencies", [])]) or "-"
+            sentiment = item.get("vote", "Neutral")
+
+            narratives.append({
+                "time": time_wib,
+                "source": source,
+                "coins": coins,
+                "sentiment": sentiment,
+                "title": title,
+                "url": url
+            })
+
+# === Save to Markdown ===
+with open("KOL_TRENDING.md", "w", encoding="utf-8") as f:
+    f.write("# 📊 KOL Narratives & Trending Coins (4h)\n\n")
+
+    # KOL Narratives
+    f.write("## 🔎 KOL Narratives (≤4h)\n\n")
+    f.write("| Time (WIB) | Source | Coins | Sentiment | Title |\n")
+    f.write("|------------|--------|-------|-----------|-------|\n")
+    if narratives:
+        for n in narratives:
+            f.write(f"| {n['time']} | {n['source']} | {n['coins']} | {n['sentiment']} | [{n['title']}]({n['url']}) |\n")
     else:
-        print("Error fetch top coins:", resp.text)
-        return []
+        f.write("| No data | - | - | - | No recent narratives found |\n")
 
-
-def format_time_wib(dt):
-    """Convert UTC ke WIB"""
-    return dt.replace(tzinfo=pytz.utc).astimezone(WIB).strftime("%Y-%m-%d %H:%M:%S")
-
-
-def main():
-    coins = fetch_top_coins(100)
-    cutoff = datetime.datetime.utcnow() - datetime.timedelta(hours=4)
-
-    with open("KOL_TRENDING.md", "w", encoding="utf-8") as f:
-        f.write("# 📊 KOL Narratives & Trending Coins (4h)\n\n")
-
-        # Filter KOL narratives hanya ≤ 4 jam terakhir
-        f.write("## 🔎 KOL Narratives (≤4h)\n\n")
-        f.write("| Time (WIB) | Source | Coins | Sentiment | Title |\n")
-        f.write("|------------|--------|-------|-----------|-------|\n")
-
-        for item in KOL_SOURCES:
-            if item["time"] >= cutoff:  # hanya yg masih fresh
-                f.write(
-                    f"| {format_time_wib(item['time'])} "
-                    f"| {item['source']} "
-                    f"| {','.join(item['coins'])} "
-                    f"| {item['sentiment']} "
-                    f"| [{item['title']}]({item['link']}) |\n"
-                )
-
-        # Dynamic Trending Coins
-        f.write("\n\n## 🚀 Dynamic Trending Coins (Top 100)\n\n")
-        f.write("| Rank | Coin | Symbol | Market Cap (USD) | 24h Volume (USD) |\n")
-        f.write("|------|------|--------|------------------|-----------------|\n")
-
-        for c in coins:
-            f.write(
-                f"| {c['market_cap_rank']} "
-                f"| {c['name']} "
-                f"| {c['symbol'].upper()} "
-                f"| {c['market_cap']:,} "
-                f"| {c['total_volume']:,} |\n"
-            )
-
-
-if __name__ == "__main__":
-    main()
+    f.write("\n")
