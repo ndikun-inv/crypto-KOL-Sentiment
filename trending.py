@@ -6,35 +6,31 @@ URL = f"https://cryptopanic.com/api/v1/posts/?auth_token={API_KEY}&public=true"
 
 def fetch_news():
     try:
-        res = requests.get(URL, timeout=10)
-        res.raise_for_status()
-        return res.json().get("results", [])
+        r = requests.get(URL, timeout=10)
+        r.raise_for_status()
+        data = r.json()
+
+        results = []
+        for post in data.get("results", []):
+            title = post.get("title", "No title")
+            source = post.get("source", {}).get("title", "Unknown")
+            results.append((title, source))
+
+        return results
     except Exception as e:
-        print("Error fetch:", e)
-        return []
+        return [(f"Error: {str(e)}", "Check API key or quota")]
 
-def build_markdown(posts):
-    md = ["# 📰 Crypto News (CryptoPanic)\n"]
-    md.append("| Title | Source |")
-    md.append("|-------|---------|")
-    
-    if not posts:
-        md.append("| ❌ No data | Check API key or quota |")
-        return "\n".join(md)
-
-    for p in posts[:10]:  # ambil 10 berita terbaru
-        title = p.get("title", "No Title").replace("|", "-")
-        url = p.get("url", "")
-        source = p.get("source", {}).get("title", "Unknown")
-        md.append(f"| [{title}]({url}) | {source} |")
-    
-    return "\n".join(md)
+def save_markdown(news):
+    with open("TRENDING.md", "w", encoding="utf-8") as f:
+        f.write("# 📰 Crypto News (CryptoPanic)\n\n")
+        f.write("| Title | Source |\n")
+        f.write("|-------|--------|\n")
+        if not news:
+            f.write("| ❌ No data | Check API key or quota |\n")
+        else:
+            for title, source in news:
+                f.write(f"| {title} | {source} |\n")
 
 if __name__ == "__main__":
-    posts = fetch_news()
-    content = build_markdown(posts)
-
-    with open("TRENDING.md", "w", encoding="utf-8") as f:
-        f.write(content)
-
-    print("✅ TRENDING.md updated")
+    news = fetch_news()
+    save_markdown(news)
