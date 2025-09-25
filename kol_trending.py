@@ -20,11 +20,17 @@ def to_wib(utc_time: str) -> str:
     except Exception:
         return utc_time
 
-# Escape Markdown
+# Escape Markdown (biar link ga rusak)
 def md_escape(text: str) -> str:
-    return text.replace("|", "｜").replace("[", "\\[").replace("]", "\\]")
+    return (
+        text.replace("|", "｜")
+        .replace("[", "【")
+        .replace("]", "】")
+        .replace("\n", " ")
+        .strip()
+    )
 
-# 🔍 Get KOL Narratives ≤ 4h
+# 🔍 Fetch KOL Narratives ≤ 4h
 def fetch_kol(limit=10):
     if not CRYPTOPANIC_API_KEY:
         return []
@@ -61,7 +67,7 @@ def fetch_kol(limit=10):
 
     return rows
 
-# 🚀 Get Top 100 Coins (Dynamic)
+# 🚀 Fetch Top 100 Coins
 def fetch_trending(limit=100):
     params = {"vs_currency": "usd", "order": "market_cap_desc", "per_page": limit, "page": 1}
     try:
