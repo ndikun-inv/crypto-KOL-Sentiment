@@ -2,4 +2,4 @@
 
 | Word | Score |
 |------|-------|
-| ❌ Error 400 | {"errors":{"details":"Invalid JSON Web Token (JWT)"}} |
+| ❌ Invalid token format | Token bukan JWT (harus ada dua titik) |
