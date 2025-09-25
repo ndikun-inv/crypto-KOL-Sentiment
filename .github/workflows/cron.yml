@@ -1,21 +1,24 @@
 name: Crypto News
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: "0 */12 * * *"   # jalan tiap 12 jam
-  workflow_dispatch:         # bisa jalan manual juga
+    - cron: "0 */12 * * *"  # jalan tiap 12 jam
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
         with:
-          python-version: '3.11'
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
       - name: Install deps
         run: pip install requests
