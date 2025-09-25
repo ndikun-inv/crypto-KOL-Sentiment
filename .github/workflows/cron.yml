@@ -1,24 +1,19 @@
-name: Crypto Trends
-
-# ⬇️ WAJIB supaya bisa git push
-permissions:
-  contents: write
+name: Crypto News
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # bisa jalan manual
   schedule:
-    - cron: "0 2 * * *"  # 09:00 WIB
+    - cron: "0 */6 * * *" # tiap 6 jam sekali
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
@@ -27,7 +22,7 @@ jobs:
 
       - name: Run script
         env:
-          SENTIMENT_API_KEY: ${{ secrets.SENTIMENT_API_KEY }}
+          CRYPTOPANIC_API_KEY: ${{ secrets.CRYPTOPANIC_API_KEY }}
         run: python trending.py
 
       - name: Commit results
@@ -35,5 +30,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add TRENDING.md
-          git commit -m "Update trending data" || echo "No changes to commit"
+          git commit -m "Update trending news"
           git push
