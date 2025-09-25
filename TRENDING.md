@@ -1,5 +1,5 @@
-# 🔥 Crypto Trending Words (Santiment)
+# 📰 Crypto News (CryptoPanic)
 
-| Word | Score |
-|------|-------|
-| ❌ Invalid token format | Token bukan JWT (harus ada dua titik) |
+| Title | Source |
+|-------|---------|
+| ❌ No data | Check API key or quota |
