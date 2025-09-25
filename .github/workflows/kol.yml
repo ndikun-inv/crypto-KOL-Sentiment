@@ -1,4 +1,4 @@
-name: Update KOL Narratives
+name: Update KOL Narratives & Trending Coins
 
 on:
   schedule:
@@ -8,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
@@ -22,12 +23,12 @@ jobs:
       - name: Run script
         env:
           CRYPTOPANIC_API_KEY: ${{ secrets.CRYPTOPANIC_API_KEY }}
-        run: python kol_trending.py
+        run: python generate_report.py
 
       - name: Commit & Push
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add KOL_TRENDING.md
-          git commit -m "Update KOL narratives"
+          git commit -m "Update KOL narratives & trending coins" || echo "No changes to commit"
           git push
