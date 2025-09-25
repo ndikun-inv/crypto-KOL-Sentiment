@@ -20,6 +20,10 @@ def to_wib(utc_time: str) -> str:
     except Exception:
         return utc_time
 
+# Escape Markdown
+def md_escape(text: str) -> str:
+    return text.replace("|", "｜").replace("[", "\\[").replace("]", "\\]")
+
 # 🔍 Get KOL Narratives ≤ 4h
 def fetch_kol(limit=10):
     if not CRYPTOPANIC_API_KEY:
@@ -31,7 +35,7 @@ def fetch_kol(limit=10):
         r.raise_for_status()
         data = r.json()
     except Exception as e:
-        return [{"error": str(e)}]
+        return [f"| Error | {str(e)} | - | - | - |"]
 
     cutoff = datetime.utcnow() - timedelta(hours=4)
     rows = []
@@ -47,7 +51,7 @@ def fetch_kol(limit=10):
 
         time_wib = to_wib(published)
         source = item.get("source", {}).get("title", "Unknown")
-        title = item.get("title", "No title")
+        title = md_escape(item.get("title", "No title"))
         url = item.get("url", "")
         link = f"[{title}]({url})" if url else title
         coins = ",".join([c.get("code", "").upper() for c in item.get("currencies", [])]) or "-"
@@ -65,7 +69,7 @@ def fetch_trending(limit=100):
         r.raise_for_status()
         data = r.json()
     except Exception as e:
-        return [f"| Error | {str(e)} |"]
+        return [f"| Error | {str(e)} | - | - | - |"], "N/A"
 
     rows = []
     for idx, coin in enumerate(data, 1):
@@ -74,7 +78,6 @@ def fetch_trending(limit=100):
             f"{coin['market_cap']:,} | {coin['total_volume']:,} |"
         )
 
-    # Tambahin timestamp WIB biar jelas kapan update data trending
     ts_wib = datetime.utcnow().replace(tzinfo=pytz.utc).astimezone(pytz.timezone("Asia/Jakarta"))
     timestamp = ts_wib.strftime("%Y-%m-%d %H:%M:%S WIB")
 
