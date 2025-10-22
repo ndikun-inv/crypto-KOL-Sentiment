@@ -2,8 +2,8 @@
 
 | Title | Source |
 |-------|--------|
-| Dogecoin Dreams and XRP Slumps: The Top 10 Coins vs. Their All-Time Highs | Unknown |
-| 67% of Institutional Investors Expect Mega Bitcoin Rally in the Next 3–6 Months | Unknown |
-| AWS Outage Disrupts Robinhood, Coinbase, and CoinMarketCap as Crypto Services Go Dark | Unknown |
-| Michael Saylor’s Strategy takes another small step toward 700K Bitcoin | Unknown |
-| NEW: Bitcoin Hashrate hits a new all-time high | Unknown |
+| Coinbase Acquires Crypto Fundraising Platform Echo for $375 Million | Unknown |
+| Nextech3D.ai Launches Ethereum Based Ticketing Platform | Unknown |
+| Bitcoin is a beach ball underwater | Unknown |
+| U.S. banks seek collateral for Argentina’s $20 billion lifeline | Unknown |
+| Best Wallet Token Presale Trends Toward $17M – Biggest Utility Coin Launch of 2025? | Unknown |
