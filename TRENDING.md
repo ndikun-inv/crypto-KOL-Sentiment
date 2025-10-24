@@ -2,8 +2,8 @@
 
 | Title | Source |
 |-------|--------|
-| MICHAEL SAYLOR: "AI will want Bitcoin." | Unknown |
-| Liechtenstein Launches State-Backed Blockchain Network | Unknown |
-| Mercer Park and Cube Group Announce $300 Million Merger Deal | Unknown |
-| Galaxy CEO Mike Novogratz Predicts Bitcoin Price Between $120K–$125K by Year-End | Unknown |
-| Are Masternodes Still Worth it in 2025? | Unknown |
+| Shiba Inu Holds Firm Despite 18% Crash, 1.5M Holders Signal Faith in 2025 Recovery | Unknown |
+| Latest Crypto Market Update Oct 23: ACT Soars 72%, LMTS Dips 60% | Unknown |
+| Solana Price Prediction: Bulls Target New Upswing, What’s Pushing Price | Unknown |
+| MNT Token Records 450% Volume Surge on Bybit in Q3 | Unknown |
+| Another ‘legacy’ asset manager enters the crypto ETF ‘land rush’ | Unknown |
