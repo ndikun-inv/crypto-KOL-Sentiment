@@ -2,8 +2,8 @@
 
 | Title | Source |
 |-------|--------|
-| Shiba Inu Holds Firm Despite 18% Crash, 1.5M Holders Signal Faith in 2025 Recovery | Unknown |
-| Latest Crypto Market Update Oct 23: ACT Soars 72%, LMTS Dips 60% | Unknown |
-| Solana Price Prediction: Bulls Target New Upswing, What’s Pushing Price | Unknown |
-| MNT Token Records 450% Volume Surge on Bybit in Q3 | Unknown |
-| Another ‘legacy’ asset manager enters the crypto ETF ‘land rush’ | Unknown |
+| Japan’s SBI Invests in US AI Fund to Fuel Web3 Finance Strategy | Unknown |
+| White House Aims for Bipartisan Crypto Legislation in 2025 | Unknown |
+| BNB wins ‘Uptober’ amid Binance market crash scrutiny | Unknown |
+| ‼️ Money market funds just hit an all-time high of $7.4 TRILLION  99% chance the Fed cuts rates in 6 days.  Rate cuts will push treasury holders to seek more risk, driving liquidity into Bitcoin and other assets  Liquidity tsunami incoming | Unknown |
+| Canada Levies Record Fine On Crypto Exchange Cryptomus | Unknown |
