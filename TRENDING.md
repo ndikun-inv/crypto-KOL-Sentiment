@@ -2,8 +2,8 @@
 
 | Title | Source |
 |-------|--------|
-| Japan’s SBI Invests in US AI Fund to Fuel Web3 Finance Strategy | Unknown |
-| White House Aims for Bipartisan Crypto Legislation in 2025 | Unknown |
-| BNB wins ‘Uptober’ amid Binance market crash scrutiny | Unknown |
-| ‼️ Money market funds just hit an all-time high of $7.4 TRILLION  99% chance the Fed cuts rates in 6 days.  Rate cuts will push treasury holders to seek more risk, driving liquidity into Bitcoin and other assets  Liquidity tsunami incoming | Unknown |
-| Canada Levies Record Fine On Crypto Exchange Cryptomus | Unknown |
+| Solana (SOL) Price Poised For 55% Thanks To This Development | Unknown |
+| 2025 Marks the Year America Became Crypto-Friendly Again | Unknown |
+| Standard Chartered Predicts Bitcoin Drop Below $100K Even as Global M2 Growth Turns Bullish | Unknown |
+| Bitcoin Price Stabilizes — Buyers Step In To Prevent Deeper Correction | Unknown |
+| Latest Crypto Market Update Oct 24: LIBERTY Rise 200%, MET Dip 15% | Unknown |
