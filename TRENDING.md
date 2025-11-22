@@ -2,8 +2,8 @@
 
 | Title | Source |
 |-------|--------|
-| Google Sparks Backlash After Gmail Setting Lets Gemini Peek Inside Inboxes | Unknown |
-| Bitcoin Giant Strategy Could Shed Billions If Removed From Stock Indices: JPMorgan | Unknown |
-| Arthur Hayes Warns Bitcoin Could Drop to $80K With Liquidity Weakness and Market Stress | Unknown |
-| XRP &amp; XLM Brace For SWIFT’s ISO: Who’s Really Made The Cut? | Unknown |
-| Why Does Asia Keep Buying Bitcoin While Americans Are Selling? | Unknown |
+| The Buckle Tops Q3 Estimates With Strong Sales and EPS Growth | Unknown |
+| Beaten-Down Altcoins to Buy? XRP, BNB & SUI Price Analysis | Unknown |
+| Tom Lee Knows Why the Crypto Market Crashed: $BEST May Be the Safest Investment Now | Unknown |
+| Crypto News: Citi and Swift Achieve Synchronized Fiat-to-Digital Currency Settlement | Unknown |
+| Smart money repositions as market slides | Unknown |
