@@ -2,8 +2,8 @@
 
 | Title | Source |
 |-------|--------|
-| Michael Burry Short Sells Tesla Stock Over High Valuation Concerns | Unknown |
-| SEC Chair Paul Atkins to Discuss U.S. Capital Market Innovations | Unknown |
-| Bitcoin Mining Faces Challenges Amid Profitability Decline | Unknown |
-| Europe’s Crypto Crusade Rages On | Unknown |
-| Vanguard breaks tradition with new access to crypto ETFs | Unknown |
+| Anthropic study says AI agents developed $4.6M in smart contract bugs | Unknown |
+| Cango posts 60% Q3 revenue jump as bitcoin mining output climbs | Unknown |
+| DeFi Development Corp Partners With Harmonic to Boost Solana Validator Revenue as SOL Eyes Rebound | Unknown |
+| South Korea’s AML crackdown enters new phase of unprecedented penalties | Unknown |
+| On Thin Ice: Crypto Daybook Americas | Unknown |
