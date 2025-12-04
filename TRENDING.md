@@ -2,8 +2,8 @@
 
 | Title | Source |
 |-------|--------|
-| Anthropic study says AI agents developed $4.6M in smart contract bugs | Unknown |
-| Cango posts 60% Q3 revenue jump as bitcoin mining output climbs | Unknown |
-| DeFi Development Corp Partners With Harmonic to Boost Solana Validator Revenue as SOL Eyes Rebound | Unknown |
-| South Korea’s AML crackdown enters new phase of unprecedented penalties | Unknown |
-| On Thin Ice: Crypto Daybook Americas | Unknown |
+| Bitcoin Transfer from Cumberland DRW to Anonymous Address | Unknown |
+| CME Group Introduces New Bitcoin Volatility Index | Unknown |
+| Aave DAO mulls pulling back ‘multichain strategy,’ deprecating zkSync, Metis and Soneium instances | Unknown |
+| Stablecoins were built to replace banks but on course to becoming one | Unknown |
+| Kevin O'Leary Skeptical of December Fed Rate Cut Impact on Bitcoin | Unknown |
