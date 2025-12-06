@@ -2,8 +2,8 @@
 
 | Title | Source |
 |-------|--------|
-| Ripple Fuses 4 Core Acquisitions to Build One-Stop Finance Grid | Unknown |
-| SEC meeting exposes rifts on tokenization and DeFi oversight | Unknown |
-| Shiba Inu Price Prediction: 2026 Privacy Upgrade Could Trigger the Next Big SHIB Price Explosion | Unknown |
-| U.S. Sovereign Debt Surpasses $30 Trillion for the First Time | Unknown |
-| INTEL: ASTER TEAM BURNS $80M FROM BUYBACK WALLET | Unknown |
+| JUST IN: 🇺🇸 Indiana introduces bill to allow public investment funds to buy Bitcoin ETFs | Unknown |
+| Turkish crypto exchange Paribu buys majority stake in competitor CoinMENA | Unknown |
+| Bitcoin ETFs Just Shed $194 Million—Highest in Two Weeks | Unknown |
+| Ethereum’s Sandwich Attack Profits Collapse Even as DEX Volumes Hit New Highs | Unknown |
+| Top Altcoins to Buy Today Ahead of Major Price Moves | Unknown |
