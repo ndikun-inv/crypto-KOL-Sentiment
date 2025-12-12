@@ -2,8 +2,8 @@
 
 | Title | Source |
 |-------|--------|
-| New statue of Satoshi Nakamoto at the New York stock exchange | Unknown |
-| Tom Lee(@fundstrat)'s #Bitmine just bought another 33,504 $ETH($112.06M) over the past 6 hours. | Unknown |
-| U.S. CFTC welcomes crypto executives to innovation council | Unknown |
-| Senators Aim to Resolve Key Differences in Cryptocurrency Legislation | Unknown |
-| BREAKING: 🇺🇸 New York Stock Exchange unveils new statue of Bitcoin creator Satoshi Nakamoto! | Unknown |
+| What explains the two-tier justice facing TradFi and DeFi entrepreneurs? | Unknown |
+| Solana Breakpoint 2025: Thursday Midday Brief Covering Key Announcements and Stories | Unknown |
+| Circle and Aleo have announced USDCx, a privacy-focused variant of the USDC stablecoin on Aleo's testnet.  This development aims to enhance institutional privacy while maintaining regulatory compliance. | Unknown |
+| Coinbase expands Solana trading access with integrated on chain swaps | Unknown |
+| Crypto Today: Bitcoin, Ethereum, XRP slide as risk-off sentiment persists after Fed decision | Unknown |
