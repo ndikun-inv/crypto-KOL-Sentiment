@@ -2,8 +2,8 @@
 
 | Title | Source |
 |-------|--------|
-| Cardano price: why 11% spike puts ADA on breakout lane | Unknown |
-| REV Group (REVG) Beats Q4 Earnings and Revenue Expectations | Unknown |
-| Binance Executive Yi He’s WeChat Hacked in $55K Meme Coin Scam | Unknown |
-| Donald Trump to Conduct Final Interviews for Next Federal Reserve Chair This Week | Unknown |
-| FBI Breakthrough Could Send Shiba Inu Toward Massive 200% Rally | Unknown |
+| New statue of Satoshi Nakamoto at the New York stock exchange | Unknown |
+| Tom Lee(@fundstrat)'s #Bitmine just bought another 33,504 $ETH($112.06M) over the past 6 hours. | Unknown |
+| U.S. CFTC welcomes crypto executives to innovation council | Unknown |
+| Senators Aim to Resolve Key Differences in Cryptocurrency Legislation | Unknown |
+| BREAKING: 🇺🇸 New York Stock Exchange unveils new statue of Bitcoin creator Satoshi Nakamoto! | Unknown |
