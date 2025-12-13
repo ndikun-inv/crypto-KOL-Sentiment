@@ -2,8 +2,8 @@
 
 | Title | Source |
 |-------|--------|
-| What explains the two-tier justice facing TradFi and DeFi entrepreneurs? | Unknown |
-| Solana Breakpoint 2025: Thursday Midday Brief Covering Key Announcements and Stories | Unknown |
-| Circle and Aleo have announced USDCx, a privacy-focused variant of the USDC stablecoin on Aleo's testnet.  This development aims to enhance institutional privacy while maintaining regulatory compliance. | Unknown |
-| Coinbase expands Solana trading access with integrated on chain swaps | Unknown |
-| Crypto Today: Bitcoin, Ethereum, XRP slide as risk-off sentiment persists after Fed decision | Unknown |
+| XRP Price Prediction: Is XRP Preparing for a Major Breakout as Selling Pressure Drops Nearly -50%? | Unknown |
+| SEC Grants DTCC Ability to Tokenize Assets | Unknown |
+| JPMorgan Hits Landmark Breakthrough Using Public Blockchain Rails | Unknown |
+| Ripple’s 89% Fee Crash Hints At XRP's Oversold Price Bounce | Unknown |
+| Dogecoin Price Prediction: Chart Tension Builds at $0.13 – Is DOGE About to Explode or Collapse? | Unknown |
