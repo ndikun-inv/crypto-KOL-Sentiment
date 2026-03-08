@@ -4,110 +4,110 @@
 
 | Time (WIB) | Source | Coins | Sentiment | Title |
 |------------|--------|-------|-----------|-------|
-| 2026-03-08 15:19:49 | The Defiant | BTC,ETH | Neutral | [Crypto Market Drops as US Data Dashes Rate Cut Hopes](https://thedefiant.io/example1) |
-| 2026-03-08 13:19:49 | Glassnode | BTC | Negative | [Bitcoin On-Chain Signals Weakening Momentum](https://glassnode.com/example2) |
+| 2026-03-08 19:18:16 | The Defiant | BTC,ETH | Neutral | [Crypto Market Drops as US Data Dashes Rate Cut Hopes](https://thedefiant.io/example1) |
+| 2026-03-08 17:18:16 | Glassnode | BTC | Negative | [Bitcoin On-Chain Signals Weakening Momentum](https://glassnode.com/example2) |
 
 ## 🚀 Dynamic Trending Coins (Top 100)
 
 | Rank | Coin | Symbol | Market Cap (USD) | 24h Volume (USD) |
 |------|------|--------|------------------|------------------|
-| 1 | Bitcoin | BTC | 1,342,022,963,831 | 30,685,598,737 |
-| 2 | Ethereum | ETH | 234,204,211,057 | 13,503,823,527 |
-| 3 | Tether | USDT | 183,961,205,900 | 48,626,330,135 |
-| 4 | BNB | BNB | 83,881,218,362 | 537,716,454 |
-| 5 | XRP | XRP | 82,241,202,645 | 1,528,124,943 |
-| 6 | USDC | USDC | 77,243,326,887 | 2,545,159,940 |
-| 7 | Solana | SOL | 46,784,714,111 | 2,298,641,630 |
-| 8 | TRON | TRX | 27,395,015,177 | 414,496,921 |
+| 1 | Bitcoin | BTC | 1,344,289,743,130 | 30,923,350,191 |
+| 2 | Ethereum | ETH | 236,436,807,517 | 14,642,746,446 |
+| 3 | Tether | USDT | 183,970,990,649 | 48,754,516,478 |
+| 4 | BNB | BNB | 84,176,843,254 | 604,666,983 |
+| 5 | XRP | XRP | 82,898,195,653 | 1,404,352,237 |
+| 6 | USDC | USDC | 77,231,387,963 | 5,132,334,121 |
+| 7 | Solana | SOL | 46,923,113,739 | 2,257,625,507 |
+| 8 | TRON | TRX | 27,480,555,658 | 432,192,058 |
 | 9 | Figure Heloc | FIGR_HELOC | 16,026,442,234 | 156,030 |
-| 10 | Dogecoin | DOGE | 13,596,177,947 | 759,455,626 |
-| 11 | WhiteBIT Coin | WBT | 11,472,682,246 | 46,406,826 |
-| 12 | USDS | USDS | 11,039,376,238 | 17,697,594 |
-| 13 | Cardano | ADA | 9,186,775,928 | 345,099,400 |
-| 14 | Bitcoin Cash | BCH | 8,931,749,822 | 154,469,089 |
-| 15 | LEO Token | LEO | 8,320,349,558 | 812,994 |
-| 16 | Hyperliquid | HYPE | 7,282,829,344 | 144,675,955 |
-| 17 | Monero | XMR | 6,244,790,788 | 61,909,033 |
-| 18 | Chainlink | LINK | 6,054,137,332 | 228,035,235 |
-| 19 | Ethena USDe | USDE | 5,935,008,414 | 102,162,003 |
-| 20 | Canton | CC | 5,790,819,613 | 69,652,585 |
-| 21 | Stellar | XLM | 4,904,065,796 | 67,051,301 |
-| 22 | USD1 | USD1 | 4,600,932,636 | 688,991,895 |
-| 23 | Dai | DAI | 4,295,816,749 | 45,816,167 |
-| 24 | Rain | RAIN | 4,261,380,873 | 30,796,196 |
-| 25 | PayPal USD | PYUSD | 4,136,009,358 | 33,797,183 |
-| 26 | Hedera | HBAR | 4,093,814,685 | 56,773,273 |
-| 27 | Litecoin | LTC | 4,047,955,925 | 264,184,110 |
-| 28 | Avalanche | AVAX | 3,826,262,812 | 171,341,648 |
-| 29 | Sui | SUI | 3,441,625,134 | 275,187,950 |
-| 30 | Zcash | ZEC | 3,268,059,429 | 218,314,717 |
-| 31 | Toncoin | TON | 3,199,034,189 | 77,912,483 |
-| 32 | Shiba Inu | SHIB | 3,109,278,838 | 88,304,892 |
-| 33 | Cronos | CRO | 3,044,605,641 | 8,857,741 |
-| 34 | Tether Gold | XAUT | 2,899,042,155 | 304,133,473 |
-| 35 | MemeCore | M | 2,709,803,570 | 10,421,268 |
-| 36 | World Liberty Financial | WLFI | 2,700,676,120 | 66,365,667 |
-| 37 | PAX Gold | PAXG | 2,571,866,151 | 166,070,335 |
-| 38 | Polkadot | DOT | 2,426,255,620 | 122,652,589 |
-| 39 | Uniswap | UNI | 2,334,957,279 | 133,711,029 |
-| 40 | Mantle | MNT | 2,196,865,319 | 25,420,644 |
-| 41 | OKB | OKB | 2,048,278,774 | 51,630,148 |
+| 10 | Dogecoin | DOGE | 13,694,637,774 | 761,265,725 |
+| 11 | WhiteBIT Coin | WBT | 11,488,550,889 | 47,426,023 |
+| 12 | USDS | USDS | 11,050,261,765 | 32,515,996 |
+| 13 | Cardano | ADA | 9,300,896,523 | 337,763,240 |
+| 14 | Bitcoin Cash | BCH | 8,944,932,354 | 154,211,887 |
+| 15 | LEO Token | LEO | 8,330,237,273 | 820,672 |
+| 16 | Hyperliquid | HYPE | 7,338,735,200 | 132,796,910 |
+| 17 | Monero | XMR | 6,267,537,798 | 53,145,792 |
+| 18 | Chainlink | LINK | 6,111,298,993 | 231,969,129 |
+| 19 | Ethena USDe | USDE | 5,935,685,883 | 135,733,375 |
+| 20 | Canton | CC | 5,763,226,232 | 76,413,839 |
+| 21 | Stellar | XLM | 4,939,285,079 | 66,128,840 |
+| 22 | USD1 | USD1 | 4,602,480,226 | 919,747,476 |
+| 23 | Dai | DAI | 4,288,410,634 | 51,320,991 |
+| 24 | Rain | RAIN | 4,273,126,747 | 30,979,897 |
+| 25 | PayPal USD | PYUSD | 4,137,090,532 | 55,487,791 |
+| 26 | Hedera | HBAR | 4,110,837,340 | 59,835,978 |
+| 27 | Litecoin | LTC | 4,080,669,055 | 270,822,596 |
+| 28 | Avalanche | AVAX | 3,859,325,399 | 169,485,809 |
+| 29 | Sui | SUI | 3,462,195,340 | 280,479,664 |
+| 30 | Zcash | ZEC | 3,336,620,712 | 213,221,466 |
+| 31 | Toncoin | TON | 3,242,665,184 | 76,947,807 |
+| 32 | Shiba Inu | SHIB | 3,142,436,741 | 90,039,016 |
+| 33 | Cronos | CRO | 3,057,663,069 | 8,757,548 |
+| 34 | Tether Gold | XAUT | 2,898,586,288 | 273,817,984 |
+| 35 | World Liberty Financial | WLFI | 2,769,175,156 | 79,095,428 |
+| 36 | MemeCore | M | 2,656,276,382 | 9,936,166 |
+| 37 | PAX Gold | PAXG | 2,570,570,996 | 175,684,208 |
+| 38 | Polkadot | DOT | 2,449,859,702 | 116,891,066 |
+| 39 | Uniswap | UNI | 2,341,046,823 | 131,955,519 |
+| 40 | Mantle | MNT | 2,158,759,816 | 29,023,792 |
+| 41 | OKB | OKB | 2,055,841,214 | 50,305,586 |
 | 42 | Circle USYC | USYC | 2,034,602,729 | 55,935 |
-| 43 | BlackRock USD Institutional Digital Liquidity Fund | BUIDL | 2,006,825,079 | 0.0 |
-| 44 | Pi Network | PI | 1,971,210,463 | 60,453,965 |
-| 45 | Falcon USD | USDF | 1,737,182,790 | 698,696 |
-| 46 | Global Dollar | USDG | 1,702,475,738 | 18,486,554 |
-| 47 | Sky | SKY | 1,676,168,998 | 11,092,880 |
-| 48 | Aster | ASTER | 1,675,936,790 | 69,500,832 |
-| 49 | Bittensor | TAO | 1,675,870,374 | 114,829,848 |
-| 50 | Aave | AAVE | 1,616,006,138 | 206,972,269 |
-| 51 | Ripple USD | RLUSD | 1,579,639,092 | 35,694,263 |
-| 52 | NEAR Protocol | NEAR | 1,561,739,975 | 139,104,943 |
-| 53 | Bitget Token | BGB | 1,517,317,449 | 10,305,829 |
-| 54 | HTX DAO | HTX | 1,471,451,595 | 25,954,002 |
-| 55 | Internet Computer | ICP | 1,335,786,805 | 39,877,071 |
-| 56 | Pepe | PEPE | 1,333,648,401 | 232,960,281 |
-| 57 | BFUSD | BFUSD | 1,319,360,028 | 1,387,294 |
-| 58 | Ethereum Classic | ETC | 1,248,950,662 | 38,302,060 |
-| 59 | Ondo | ONDO | 1,193,966,929 | 37,299,088 |
-| 60 | Gate | GT | 1,133,103,428 | 1,956,639 |
-| 61 | Pump.fun | PUMP | 1,119,236,456 | 55,115,260 |
-| 62 | Worldcoin | WLD | 1,061,429,850 | 50,542,648 |
-| 63 | Superstate Short Duration U.S. Government Securities Fund (USTB) | USTB | 1,051,859,654 | 0.0 |
-| 64 | KuCoin | KCS | 1,043,528,187 | 2,032,971 |
-| 65 | Morpho | MORPHO | 1,023,618,424 | 10,038,502 |
-| 66 | POL (ex-MATIC) | POL | 1,001,410,061 | 48,403,287 |
-| 67 | Midnight | NIGHT | 925,678,216 | 5,823,435 |
-| 68 | Quant | QNT | 925,601,352 | 8,062,701 |
-| 69 | Ondo US Dollar Yield | USDY | 919,397,963 | 80,984 |
-| 70 | Spiko EU T-Bills Money Market Fund | EUTBL | 876,130,559 | 0.0 |
-| 71 | NEXO | NEXO | 874,482,770 | 6,426,297 |
-| 72 | Cosmos Hub | ATOM | 858,330,209 | 28,462,613 |
-| 73 | Ethena | ENA | 837,719,732 | 62,764,900 |
-| 74 | USDtb | USDTB | 833,976,712 | 430,974 |
-| 75 | Kaspa | KAS | 785,220,101 | 9,813,146 |
-| 76 | Flare | FLR | 760,319,537 | 2,195,184 |
-| 77 | Provenance Blockchain | HASH | 752,926,985 | 18,882.63 |
-| 78 | OUSG | OUSG | 750,833,115 | 0.0 |
-| 79 | Janus Henderson Anemoy AAA CLO Fund | JAAA | 744,852,559 | 0.0 |
-| 80 | USDD | USDD | 739,682,949 | 1,791,700 |
-| 81 | Algorand | ALGO | 729,014,211 | 30,261,942 |
-| 82 | Aptos | APT | 726,897,872 | 46,685,459 |
-| 83 | Filecoin | FIL | 710,575,527 | 55,492,184 |
-| 84 | Render | RENDER | 701,188,537 | 40,938,761 |
-| 85 | Official Trump | TRUMP | 700,071,273 | 73,381,039 |
-| 86 | XDC Network | XDC | 648,894,552 | 14,307,719 |
-| 87 | ​​Stable | STABLE | 623,143,939 | 23,471,627 |
-| 88 | Beldex | BDX | 608,167,364 | 11,703,726 |
-| 89 | YLDS | YLDS | 600,531,339 | 1,594,430 |
-| 90 | VeChain | VET | 585,398,429 | 13,848,804 |
-| 91 | Janus Henderson Anemoy Treasury Fund | JTRSY | 568,286,468 | 0.0 |
-| 92 | Jupiter | JUP | 565,530,488 | 19,395,842 |
-| 93 | GHO | GHO | 563,986,400 | 1,531,032 |
-| 94 | Arbitrum | ARB | 562,537,246 | 46,652,988 |
-| 95 | Usual USD | USD0 | 560,928,480 | 3,656.87 |
-| 96 | Kite | KITE | 547,780,024 | 200,589,785 |
-| 97 | TrueUSD | TUSD | 494,387,862 | 4,447,806 |
-| 98 | A7A5 | A7A5 | 493,805,213 | 186.18 |
-| 99 | Bonk | BONK | 491,293,729 | 34,271,471 |
-| 100 | Decred | DCR | 490,110,610 | 2,177,341 |
+| 43 | Pi Network | PI | 2,019,749,372 | 59,889,382 |
+| 44 | BlackRock USD Institutional Digital Liquidity Fund | BUIDL | 2,006,825,079 | 0.0 |
+| 45 | Bittensor | TAO | 1,771,132,034 | 105,332,343 |
+| 46 | Falcon USD | USDF | 1,737,155,700 | 700,131 |
+| 47 | Global Dollar | USDG | 1,702,342,455 | 17,452,845 |
+| 48 | Aster | ASTER | 1,692,830,758 | 75,077,788 |
+| 49 | Sky | SKY | 1,681,914,057 | 9,358,068 |
+| 50 | Aave | AAVE | 1,621,247,210 | 218,866,996 |
+| 51 | NEAR Protocol | NEAR | 1,583,187,989 | 144,559,885 |
+| 52 | Ripple USD | RLUSD | 1,579,573,862 | 33,743,581 |
+| 53 | Bitget Token | BGB | 1,511,799,103 | 10,265,426 |
+| 54 | HTX DAO | HTX | 1,476,205,761 | 20,635,267 |
+| 55 | Internet Computer | ICP | 1,345,080,873 | 39,968,722 |
+| 56 | Pepe | PEPE | 1,336,508,107 | 229,491,152 |
+| 57 | BFUSD | BFUSD | 1,319,609,329 | 1,799,554 |
+| 58 | Ethereum Classic | ETC | 1,258,923,003 | 38,008,788 |
+| 59 | Ondo | ONDO | 1,200,535,974 | 36,779,000 |
+| 60 | Pump.fun | PUMP | 1,165,115,177 | 64,837,205 |
+| 61 | Gate | GT | 1,133,103,428 | 1,837,710 |
+| 62 | Worldcoin | WLD | 1,054,776,970 | 64,269,178 |
+| 63 | Morpho | MORPHO | 1,051,647,123 | 12,170,311 |
+| 64 | Superstate Short Duration U.S. Government Securities Fund (USTB) | USTB | 1,051,385,309 | 0.0 |
+| 65 | KuCoin | KCS | 1,051,174,300 | 2,137,191 |
+| 66 | POL (ex-MATIC) | POL | 1,021,356,641 | 52,847,394 |
+| 67 | Quant | QNT | 935,670,490 | 7,774,156 |
+| 68 | Midnight | NIGHT | 928,866,367 | 5,682,937 |
+| 69 | Ondo US Dollar Yield | USDY | 914,068,070 | 1,047,393 |
+| 70 | NEXO | NEXO | 882,013,313 | 6,582,534 |
+| 71 | Spiko EU T-Bills Money Market Fund | EUTBL | 871,865,462 | 0.0 |
+| 72 | Cosmos Hub | ATOM | 868,438,209 | 29,193,953 |
+| 73 | Ethena | ENA | 844,080,829 | 60,576,399 |
+| 74 | USDtb | USDTB | 834,739,136 | 375,275 |
+| 75 | Kaspa | KAS | 797,140,415 | 9,040,224 |
+| 76 | Flare | FLR | 768,546,988 | 2,645,337 |
+| 77 | OUSG | OUSG | 750,833,115 | 0.0 |
+| 78 | Janus Henderson Anemoy AAA CLO Fund | JAAA | 744,852,559 | 0.0 |
+| 79 | USDD | USDD | 739,139,264 | 1,464,633 |
+| 80 | Algorand | ALGO | 735,801,530 | 28,809,924 |
+| 81 | Aptos | APT | 733,080,406 | 47,134,877 |
+| 82 | Provenance Blockchain | HASH | 728,222,215 | 18,394.07 |
+| 83 | Render | RENDER | 718,633,709 | 40,289,813 |
+| 84 | Filecoin | FIL | 718,305,487 | 55,050,030 |
+| 85 | Official Trump | TRUMP | 699,059,840 | 73,641,654 |
+| 86 | XDC Network | XDC | 649,155,332 | 13,647,652 |
+| 87 | Beldex | BDX | 605,066,037 | 12,520,225 |
+| 88 | YLDS | YLDS | 600,594,017 | 1,670,205 |
+| 89 | VeChain | VET | 591,042,199 | 14,069,870 |
+| 90 | Jupiter | JUP | 580,665,656 | 20,565,231 |
+| 91 | ​​Stable | STABLE | 578,801,677 | 23,523,817 |
+| 92 | Arbitrum | ARB | 568,606,261 | 47,136,145 |
+| 93 | Janus Henderson Anemoy Treasury Fund | JTRSY | 568,286,468 | 0.0 |
+| 94 | GHO | GHO | 564,081,013 | 1,671,963 |
+| 95 | Usual USD | USD0 | 562,353,647 | 8,632.4 |
+| 96 | Kite | KITE | 557,087,237 | 193,818,023 |
+| 97 | Decred | DCR | 496,396,861 | 2,095,377 |
+| 98 | Bonk | BONK | 495,627,222 | 35,508,210 |
+| 99 | TrueUSD | TUSD | 494,300,296 | 4,717,826 |
+| 100 | A7A5 | A7A5 | 472,991,787 | 154.91 |
